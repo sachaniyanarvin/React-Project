@@ -1,13 +1,16 @@
 {
   "name": "vite_app",
   "private": true,
+  "homepage": "https://sachaniyanarvin.github.io/React-Project",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "narvin": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.3.1",
